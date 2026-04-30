@@ -37,7 +37,7 @@ def test_login(wait):
         )
         username.clear()
         slow_type(username, username_val)
-
+# test
         # Enter password
         password_input = wait.until(
             EC.presence_of_element_located(
@@ -60,3 +60,4 @@ def test_login(wait):
     except Exception as e:
         logger.exception("❌ Login test failed: %s", e)
         raise
+    # this is example
